@@ -1,4 +1,0 @@
-PlayScala
-=========
-
-PlayScala book
