@@ -20,5 +20,10 @@ object Products extends Controller {
   	 Ok(views.html.products.list(Product.findAll))
   }
   
+  def show(ean: Long) = Action{
+  	   Product.findByEan(ean).map { product =>
+        Ok(views.html.products.details(product))
+       }.getOrElse(NotFound)
+  }			
 
 }
