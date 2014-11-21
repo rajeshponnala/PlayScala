@@ -11,4 +11,7 @@ libraryDependencies ++= Seq(
   anorm,
   cache,
   ws
-)
+ )
+
+libraryDependencies += "net.sf.barcode4j" % "barcode4j" % "2.0"
+
