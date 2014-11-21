@@ -16,4 +16,7 @@ Product(5018206244611L, "Zebra Paperclips",
  
   def findAll =products.toList.sortBy(_.ean)
   def findByEan(ean: Long) = products.find(_.ean==ean)
+  def add(product: Product) = {
+  	products=products+product
+  }
  } 
